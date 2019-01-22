@@ -18,5 +18,10 @@ from django.urls import path
 from connexion import views
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('',views.home),
+    path('connect',views.home),
+    path('register',views.sign),
+    path('goSign',views.goSign),
+    path('save',views.getUserToSave)
 ]
